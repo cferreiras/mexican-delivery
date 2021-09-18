@@ -112,6 +112,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pymexican/
 
 # Spyder project settings
 .spyderproject
@@ -139,3 +140,8 @@ cython_debug/
 
 # vs code
 .vscode /
+
+# others
+node_modules/
+.idea/
+htmlcov/
