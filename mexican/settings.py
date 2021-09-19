@@ -38,11 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # apps
+    # meus apps
 
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
     'products.apps.ProductsConfig',
+
+    # outros apps
+    "debug_toolbar",
 ]
 
 MIDDLEWARE = [
@@ -139,3 +142,10 @@ AUTH_USER_MODEL ="users.User"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+# django-debug
+
+import socket  # noqa
+
+hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]

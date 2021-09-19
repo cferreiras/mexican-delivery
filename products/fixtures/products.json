@@ -1,0 +1,337 @@
+[
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "created": "2021-09-18T19:48:50.913Z",
+            "modified": "2021-09-18T19:48:50.913Z",
+            "name": "Nachos",
+            "slug": "nachos"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Tacos",
+            "slug": "tacos"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Porções",
+            "slug": "porcoes"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Fajitas",
+            "slug": "fajitas"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Quesadillas",
+            "slug": "quesadillas"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 7,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Baby Back Ribs",
+            "slug": "ribs"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 8,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Burritos",
+            "slug": "burritos"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 9,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Burguer Artesanais",
+            "slug": "burguers"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 10,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Pizzas",
+            "slug": "pizzas"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 11,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Sobremesas",
+            "slug": "sobremesas"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 12,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Tequilas",
+            "slug": "tequilas"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 13,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Drinks e Coquetéis",
+            "slug": "drinks"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 14,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Especial",
+            "slug": "especial"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 15,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "name": "Soft Drinks",
+            "slug": "soft"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 2,
+            "name": "Nachos Azteca",
+            "slug": "nachos-azteca",
+            "image": "products/2021/09/18/nachos_azteca.jpg",
+            "description": "Tortillas de Milho da Casa, Chili com Carne, Feijões, Sour Cream, Guacamole e Bacon ",
+            "price": "59.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 17,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 2,
+            "name": "Nachos Caliestes",
+            "slug": "nachos-calientes",
+            "image": "products/2021/09/18/nachos_calientes.jpg",
+            "description": "Tortillas de Milho da Casa, Queijo Derretido e Chilli com Carne",
+            "price": "59.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 8,
+            "name": "Burrito de Chilli com Carne",
+            "slug": "burrito-carne",
+            "image": "products/2021/09/18/burrito_chilli_com_carne.jpg",
+            "description": "Tortilla de Trigo Recheada com Queijo Mussarela, Batata Frita, Arroz de Coentro, Sour Cream, Feijões Fritos e Guacamole",
+            "price": "48.00",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 8,
+            "name": "Burrito de Frango Desfiado",
+            "slug": "burrito-frango",
+            "image": "products/2021/09/18/burrito_frango_desfiado.jpg",
+            "description": "Tortilla de Trigo Recheada com Queijo Mussarela, Batata Frita, Arroz de Coentro, Sour Cream, Feijões Fritos e Guacamole",
+            "price": "32.00",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 7,
+            "name": "Baby Back Ribs",
+            "slug": "colar-dourado-ponto-de-luz",
+            "image": "products/2021/09/18/baby_ribs.jpg",
+            "description": "Costeletas de Porco ao Molho Barbecue, Acompanha Arroz Mexicano e Batatas Fritas",
+            "price": "99.90",
+            "is_available": false
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 21,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 5,
+            "name": "Fajitas de Carne",
+            "slug": "fajita-carne",
+            "image": "products/2021/09/18/fajitas_carne.jpg",
+            "description": "Filé Mignon com Cebolas e Pimentões na Chapa, Acompanha Tortillas de Trigo, Arroz, Pasta de Feijões Fritos, Salsa Picante, Sour Cream e Guacamole",
+            "price": "112.00",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 22,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 5,
+            "name": "Fajitas de Frango",
+            "slug": "fajitas-frango",
+            "image": "products/2021/09/18/fajitas_carne.jpg",
+            "description": "Peito de Frango com Cebolas e Pimentões na Chapa, Acompanha Tortillas de Trigo, Arroz, Pasta de Feijões Fritos, Salsa Picante, Sour Cream e Guacamole",
+            "price": "60.00",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 23,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 6,
+            "name": "Quessadillas de Queijo",
+            "slug": "quessadillas-queijo",
+            "image": "products/2021/09/18/quessadillas_queijo.jpg",
+            "description": "Massa a Base de Trigo Recheada com Queijo Cheddar e Mussarela",
+            "price": "18.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 24,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 6,
+            "name": "Quessadillas Veggie",
+            "slug": "quessadillas-veggie",
+            "image": "products/2021/09/18/quessadillas_veggie.jpg",
+            "description": "Massa a Base de Trigo Recheada com Guacamole",
+            "price": "18.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 25,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 4,
+            "name": "Chilli Fries",
+            "slug": "chilli-fries",
+            "image": "products/2021/09/18/porcoes_chilli_fries",
+            "description": "Porção de Batatas Fritas com Chilli, Carne e Queijo Derretido ",
+            "price": "49.00",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 26,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 4,
+            "name": "Chimichangas",
+            "slug": "chimichangas",
+            "image": "products/2021/09/18/porcoes_chimichangas.jpg",
+            "description": "Tortilla de Trigo Frita e Recheada com Cream Cheese, Pimenta Jalapeño, Baby Back Ribs Desfiado, Milho e Bacon",
+            "price": "35.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 27,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 3,
+            "name": "Tacos de Frango",
+            "slug": "tacos-frango",
+            "image": "products/2021/09/18/tacos_frango.jpg",
+            "description": "Tortilla de Milho Crocante Recheada com Cubos de Peito de Frango, Sour Cream e Pimenta",
+            "price": "14.90",
+            "is_available": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 28,
+        "fields": {
+            "created": "2021-09-18T19:48:53.913Z",
+            "modified": "2021-09-18T19:48:53.913Z",
+            "category": 3,
+            "name": "All Pastor",
+            "slug": "taco-all",
+            "image": "products/2021/09/18/tacos_all_pastor.jpg",
+            "description": "Tortilla de Milho Crocante Recheada com Pernil Desfiado, Queijo Mussarela, Abacaxi, Pimenta Jalapeño, Tomate e Coentro",
+            "price": "14.90",
+            "is_available": true
+        }
+    }
+]
