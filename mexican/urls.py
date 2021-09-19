@@ -1,4 +1,4 @@
-"""mexican URL Configuration
+"""pystore URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -20,8 +20,9 @@ from django.urls import include, path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("products/", include("products.urls")),
+    path("cart/", include("cart.urls")),
     path("", include("pages.urls")),
-    path("products/", include("products.urls"))
 ]
 
 if settings.DEBUG:
