@@ -4,7 +4,7 @@
 {% load static %}
 
 
-{% block title %}Checkout{% endblock title %}
+{% block title %}El Taco - Checkout{% endblock title %}
 
 {% block content %}
 
@@ -40,3 +40,7 @@
 
 {% endblock content %}
 
+{% block script %}
+<script src="https://unpkg.com/imask@6.0.7/dist/imask.js"></script>
+<script src="{% static 'js/order-form.js' %}"></script>
+{% endblock script %}
