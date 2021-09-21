@@ -48,7 +48,8 @@ class Cart:
         else:
             self.cart[product_id]["quantity"] += quantity
 
-        self.cart[product_id]["quantity"] = min(20, self.cart[product_id]["quantity"])
+        self.cart[product_id]["quantity"] = min(
+            20, self.cart[product_id]["quantity"])
 
         self.save()
 
@@ -63,6 +64,10 @@ class Cart:
         return sum(
             Decimal(item["price"]) * item["quantity"] for item in self.cart.values()
         )
+
+    def clear(self):
+        del self.session[settings.CART_SESSION_ID]
+        self.save()
 
     def save(self):
         self.session.modified = True

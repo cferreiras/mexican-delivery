@@ -31,7 +31,7 @@
                         <a href="{% url 'pages:about' %}" class="nav-link lead mr-4 font-weight-bold">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'cart:detail' %}" class="nav-link lead mr-4 font-weight-bold">Meus Pedidos</a>
+                        <a href="{% url 'cart:detail' %}" class="nav-link lead mr-4 font-weight-bold">Meu Carrinho</a>
                     </li>
                 </ul>
             </div>
@@ -47,6 +47,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    {% block script %}
+    {% endblock script %}
 
 </body>
 

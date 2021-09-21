@@ -3,7 +3,7 @@
 {% load static %}
 {% load widget_tweaks %}
 
-{% block title %}Meus Pedios{% endblock title %}
+{% block title %}El Taco - Carrinho{% endblock title %}
 
 {% block content %}
 
@@ -71,7 +71,7 @@
             Continuar comprando
         </a>
 
-        <a class="btn btn-success {% if not cart %}disabled{% endif %}" href="#">
+        <a class="btn btn-success {% if not cart %}disabled{% endif %}" href="{% url 'orders:create' %}">
             Finalizar compra
         </a>
     </p>
