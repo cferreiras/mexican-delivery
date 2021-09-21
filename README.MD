@@ -8,6 +8,11 @@ pip install requirements.txt
 
 ```
 
+- Para iniciar o servidor:
+```
+python manage.py runserver
+```
+
 - Para rodar os testes
 ```
 pytest
