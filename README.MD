@@ -8,11 +8,16 @@ pip install requirements.txt
 
 ```
 
+- Para iniciar o servidor:
+```
+python manage.py runserver
+```
+
 - Para rodar os testes
 ```
 pytest
 ```
-# Você também pode usar o comando:
+- Ou você pode usar o comando:
 ```
 pytest -x --cov --cov-report=html
 ```
