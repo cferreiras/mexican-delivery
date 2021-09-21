@@ -39,5 +39,5 @@ python manage.py createsuperuser
 - [Livro Two Scoops of Django](https://www.feldroy.com/collections/two-scoops-press/products/two-scoops-of-django-3-x)
 - [Livro A Wedge of Django](https://www.feldroy.com/collections/two-scoops-press/products/a-wedge-of-django)
 - [Repostitório Cookiecutter Django](https://github.com/pydanny/cookiecutter-django)
-- [Ordinary Coders: dicas de Django, Bootstrap e linguagens correlacionadas](https://www.ordinarycoders.com/blog/article/django-pagination)
-- [W3schools: diversas refências e tutoriais sobre Python, HTML, CSS etc.](https://www.w3schools.com/)
+- [Ordinary Coders: Dicas de Django, Bootstrap e linguagens correlacionadas](https://www.ordinarycoders.com/blog/article/django-pagination)
+- [W3schools: Diversas refências e tutoriais sobre Python, HTML, CSS etc.](https://www.w3schools.com/)
