@@ -17,7 +17,7 @@ python manage.py runserver
 ```
 pytest
 ```
-# Você também pode usar o comando:
+- Ou você pode usar o comando:
 ```
 pytest -x --cov --cov-report=html
 ```
