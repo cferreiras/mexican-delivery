@@ -10,6 +10,7 @@ class Payment(TimeStampedModel):
     transaction_amount = models.DecimalField(
         "Valor da Transação", max_digits=10, decimal_places=2
     )
+    installments = models.IntegerField("Parcelas")
     payment_method_id = models.CharField("Método de Pagamento", max_length=250)
     email = models.EmailField()
     doc_number = BRCPFField("CPF")

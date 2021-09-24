@@ -12,6 +12,7 @@ class PaymentForm(forms.ModelForm):
         model = Payment
         fields = [
             "transaction_amount",
+            "installments",
             "payment_method_id",
             "email",
             "doc_number",
@@ -36,6 +37,7 @@ class PaymentForm(forms.ModelForm):
             "transaction_amount": float(self.order.get_total_price()),
             "token": cd["token"],
             "description": self.order.get_description(),
+            "installments": cd["installments"],
             "payment_method_id": cd["payment_method_id"],
             "payer": {
                 "email": cd["email"],

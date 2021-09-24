@@ -32,27 +32,26 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    # meus apps instalados
-
+    # apps django
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    # apps de terceiros
+    "debug_toolbar",
+    "widget_tweaks",
+    "crispy_forms",
+    "localflavor",
+    # meus apps
     "users.apps.UsersConfig",
     "pages.apps.PagesConfig",
     "products.apps.ProductsConfig",
     "cart.apps.CartConfig",
     "orders.apps.OrdersConfig",
-    "payments.app.PaymentsConfig"
-    
-    # outros apps instalados
-    "debug_toolbar",
-    "widget_tweaks",
-    "crispy_forms",
-    "localflavor",]
+    "payments.apps.PaymentsConfig",
+]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

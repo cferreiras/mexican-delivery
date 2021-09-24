@@ -1,4 +1,3 @@
-
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.views.generic import CreateView
@@ -12,10 +11,6 @@ from .models import Item, Order
 class OrderCreateView(CreateView):
     model = Order
     form_class = OrderCreateForm
-
-    class OrderCreateView(CreateView):
-        model = Order
-        form_class = OrderCreateForm
 
     def form_valid(self, form):
         cart = Cart(self.request)
