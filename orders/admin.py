@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from payments.models import Payment
+
 from .models import Item, Order
 
 
@@ -8,6 +10,23 @@ class ItemInline(admin.TabularInline):
     raw_id_fields = ["product"]
     extra = 0
 
+class PaymentInline(admin.TabularInline):
+    model = Payment
+    can_delete = False
+    readonly_fields = (
+        "email",
+        "doc_number",
+        "transaction_amount",
+        "payment_method_id",
+        "mercado_pago_id",
+        "mercado_pago_status",
+        "mercado_pago_status_detail",
+        "modified",
+    )
+    ordering = ("-modified",)
+
+    def has_add_permission(self, request, obj):
+        return False
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):

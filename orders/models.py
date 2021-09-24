@@ -26,9 +26,19 @@ class Order(TimeStampedModel):
     def __str__(self):
         return f"Pedido {self.id}"
 
+    def get_total_price(self):
+        total_cost = sum(item.get_total_price() for item in self.items.all())
+        return total_cost
+
+    def get_description(self):
+        return ", ".join(
+            [f"{item.quantity}x {item.product.name}" for item in self.items.all()]
+        )
+
 
 class Item(models.Model):
-    order = models.ForeignKey(Order, related_name="items", on_delete=models.CASCADE)
+    order = models.ForeignKey(
+        Order, related_name="items", on_delete=models.CASCADE)
     product = models.ForeignKey(
         Product, related_name="order_items", on_delete=models.CASCADE
     )
