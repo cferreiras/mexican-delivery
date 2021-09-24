@@ -2,13 +2,13 @@
 
 {% load static %}
 
-{% block title %}Pagamento com cartão de crédito{% endblock %}
+{% block title %}El Taco - Pagamento{% endblock %}
 
 {% block content %}
 {% with total_price=order.get_total_price %}
 
 <div class="container my-3">
-    <h1 class="font-weight-bold">Pagamento com cartão de crédito</h1>
+    <h2 class="font-weight-bold">Pagamento com Cartão de Crédito</h2>
     <div class="row">
         <div class="col-lg-6">
             {% if form.errors %}
