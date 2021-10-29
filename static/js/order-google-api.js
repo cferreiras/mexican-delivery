@@ -33,11 +33,11 @@ function initMap() {
   const addressNameFormat = {
     'street_number': 'short_name',
     'route': 'long_name',
-    'locality': 'long_name',
-    'district' : 'long_name',
+    'administrative_area_level_2': 'long_name',
     'administrative_area_level_1': 'short_name',
-    'country': 'long_name',
+    'sublocality_level_1' : 'long_name',
     'postal_code': 'short_name',
+    'city' : 'long_name',
   };
   
   const getAddressComp = function (type) {
@@ -50,6 +50,10 @@ function initMap() {
   };
   document.getElementById('id_address').value =  getAddressComp('route');
   document.getElementById('id_number').value =  getAddressComp('street_number');
+  document.getElementById('id_district').value =  getAddressComp('sublocality_level_1');
+  document.getElementById('id_state').value =  getAddressComp('administrative_area_level_1');
+  document.getElementById('id_city').value =  getAddressComp('administrative_area_level_2');
+  document.getElementById('id_postal_code').value =  getAddressComp('postal_code');
 }
 
   function renderAddress(place) {
