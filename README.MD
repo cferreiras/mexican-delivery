@@ -4,7 +4,7 @@
 
 - No terminal, execute o comando
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 
 ```
 
