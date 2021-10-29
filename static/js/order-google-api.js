@@ -39,6 +39,7 @@ function initMap() {
     'country': 'long_name',
     'postal_code': 'short_name',
   };
+  
   const getAddressComp = function (type) {
     for (const component of place.address_components) {
       if (component.types[0] === type) {
