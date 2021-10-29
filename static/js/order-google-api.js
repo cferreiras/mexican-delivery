@@ -48,6 +48,7 @@ function initMap() {
     return '';
   };
   document.getElementById('id_address').value =  getAddressComp('route');
+  document.getElementById('id_number').value =  getAddressComp('street_number');
 }
 
   function renderAddress(place) {
