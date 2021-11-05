@@ -33,3 +33,5 @@ def ContactInfo(request):
         send_mail(data['subject'], message, '',['caio.fsilva@aluno.faculdadeimpacta.com.br'])
         return HttpResponse('Agradecemos o contato, em breve o retornaremos.')
     return render(request, 'contact.html')
+
+    

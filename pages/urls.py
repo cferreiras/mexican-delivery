@@ -9,3 +9,4 @@ urlpatterns = [
     path("contact/", ContactInfo, name="contact"),
     path("", HomePageView.as_view(), name="home"),
 ]
+
