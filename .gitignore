@@ -5,6 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
+*.suo
 
 # Distribution / packaging
 .Python
@@ -140,6 +141,7 @@ cython_debug/
 
 # vs code
 .vscode /
+.vs
 
 # others
 node_modules/

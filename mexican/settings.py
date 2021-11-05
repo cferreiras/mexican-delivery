@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "widget_tweaks",
     "crispy_forms",
     "localflavor",
+    "anymail",
     # meus apps
     "users.apps.UsersConfig",
     "pages.apps.PagesConfig",
@@ -142,7 +143,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # User Model
 
-AUTH_USER_MODEL ="users.User"
+AUTH_USER_MODEL = "users.User"
 
 # Media
 
@@ -162,5 +163,14 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 env = environ.Env()
 env.read_env(str(BASE_DIR / ".env"))
-MERCADO_PAGO_PUBLIC_KEY=env("MERCADO_PAGO_PUBLIC_KEY")
-MERCADO_PAGO_ACCESS_TOKEN=env("MERCADO_PAGO_ACCESS_TOKEN")
+MERCADO_PAGO_PUBLIC_KEY = env("MERCADO_PAGO_PUBLIC_KEY")
+MERCADO_PAGO_ACCESS_TOKEN = env("MERCADO_PAGO_ACCESS_TOKEN")
+
+# Email MailGun SMTP
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.mailgun.org"
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = 587
+

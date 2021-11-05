@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}El Taco - Fale Conosco{% endblock title %}
+
+{% block content %}
+
+<div class="container my-3">
+  <h3 class="font-weight-bold">Fale Conosco!</h3>
+  <div class="col-lg-6 mx-auto">
+    <form action="." method="POST">
+      {% csrf_token %}
+      <fieldset class="border-bottom mb-3 ">
+        <div id="div_id_name" class="form-group">
+          <label for="id_name" class=" requiredField">
+            Nome Completo<span class="asteriskField">*</span>
+          </label>
+          <div class="">
+            <input type="text" name="full-name" maxlength="250" class="textinput textInput form-control" required=""
+              id="id_name">
+          </div>
+        </div>
+        <div id="div_id_email" class="form-group">
+          <label for="id_email" class=" requiredField">
+            Email<span class="asteriskField">*</span>
+          </label>
+          <div class="">
+            <input type="email" name="email" maxlength="254" class="emailinput form-control" required="" id="id_email">
+          </div>
+        </div>
+        <div id="div_id_subject" class="form-group">
+          <label for="id_subject" class=" requiredField">
+            Assunto<span class="asteriskField">*</span>
+          </label>
+          <div class="">
+            <input type="text" name="subject" maxlength="250" class="textinput textInput form-control" required=""
+              id="id_subject">
+          </div>
+        </div>
+        <div id="div_id_subject" class="form-group">
+          <label for="id_subject" class=" requiredField">
+            Digite sua mensagem<span class="asteriskField">*</span>
+          </label>
+          <div class="">
+            <textarea name="message" id="message" cols="30" rows="5" class="textinput textInput form-control"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <div class="">
+          <input type="Submit" value="Enviar" class="btn btn-primary btn btn-success btn-lg btn-block">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}
